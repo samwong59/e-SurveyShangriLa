@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/registerSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        android:textColor="@color/subtitleTextColour"
+        android:textSize="@dimen/titleTextSize"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/shangriLaTitleText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="@string/emailAddress"
+                android:textColor="@color/black"
+                android:textSize="@dimen/registerTextSize" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:hint="@string/enterEmailHint"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/registerTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="Full Name:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/registerTextSize" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:hint="@string/enterFullNameHint"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/registerTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="Date of Birth:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/registerTextSize" />
+
+            <TextView
+                android:id="@+id/selectDOBText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:hint="@string/selectDateOfBirthHint"
+                android:textSize="@dimen/registerTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="Home Address:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/registerTextSize" />
+
+
+            <EditText
+                android:id="@+id/editTextHomeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:hint="@string/enterHomeAddressHint"
+                android:inputType="textPostalAddress"
+                android:textSize="@dimen/registerTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/registerTextSize" />
+
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:hint="@string/enterPasswordHint"
+                android:inputType="textPassword"
+                android:textSize="@dimen/registerTextSize"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="SNI Number:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/registerTextSize" />
+
+
+            <EditText
+                android:id="@+id/editTextSNI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:hint="Enter SNI number..."
+                android:inputType="text"
+                android:textSize="@dimen/registerTextSize"/>
+
+            <TextView
+                android:id="@+id/QRScannerLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registerTextMargin"
+                android:layout_marginEnd="@dimen/registerTextMargin"
+                android:text="Or click here to scan your QR code"
+                android:textColor="@color/QRScannerTextView"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textSize="@dimen/registerTextSize"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/registerTextMargin"/>
+
+            <TextView
+                android:id="@+id/loginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/registerTextMargin"
+                android:text="@string/loginLinkText"
+                android:textSize="14dp"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

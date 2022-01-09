@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">e-Survey Shangri La</string>
+    <string name="enterEmailHint">Enter email...</string>
+    <string name="enterPasswordHint">Enter password...</string>
+    <string name="enterFullNameHint">Enter full name...</string>
+    <string name="selectDateOfBirthHint">Select Date of Birth...</string>
+    <string name="enterHomeAddressHint">Enter home address...</string>
+    <string name="password">Password:</string>
+    <string name="emailAddress">Email Address:</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="registerLinkText">New here? Click here to register</string>
+    <string name="loginLinkText">Already have an account? Click here to login</string>
+</resources>

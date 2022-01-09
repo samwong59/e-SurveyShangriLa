@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">32sp</dimen>
+    <dimen name="registerTextMargin">26sp</dimen>
+    <dimen name="registerTextSize">20sp</dimen>
+</resources>
